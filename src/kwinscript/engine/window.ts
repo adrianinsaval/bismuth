@@ -355,7 +355,7 @@ export class EngineWindowImpl implements EngineWindow {
         break;
 
       case WindowState.Maximized:
-        this.window.commit(this.geometry, true, false);
+        this.window.commit(this.geometry, this.config.noTileBorder, false);
         break;
 
       case WindowState.Tiled:
